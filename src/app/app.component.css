@@ -8,22 +8,22 @@ form {
   background-color: white;
   border: 10px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 10px #e0e0e0;
+}
 
-  label {
-    font-weight: bold;
-    display: block;
-    margin: 5px 0;
-    font-size: 19px;
-  }
+form label {
+  font-weight: bold;
+  display: block;
+  margin: 5px 0;
+  font-size: 19px;
+}
 
-  header h1 {
-    font-weight: 700;
-    margin: 0;
-  }
+form header h1 {
+  font-weight: 700;
+  margin: 0;
+}
 
-  header h2 {
-    margin: 15px 0 25px 0;
-  }
+form header h2 {
+  margin: 15px 0 25px 0;
 }
 
 .mandatory {
@@ -42,22 +42,22 @@ form {
 
 header {
   font-weight: bold;
+}
 
-  p,
-  h1 {
-    text-align: center;
-    margin: 0;
-  }
+header p,
+header h1 {
+  text-align: center;
+  margin: 0;
+}
 
-  h1 {
-    margin-bottom: 8px;
-    font-size: 38px;
-  }
+header h1 {
+  margin-bottom: 8px;
+  font-size: 38px;
+}
 
-  h2 {
-    font-size: 1.6em;
-    font-weight: 600;
-  }
+header h2 {
+  font-size: 1.6em;
+  font-weight: 600;
 }
 
 h3 {
@@ -78,20 +78,20 @@ h3 {
   margin: 0;
   font-size: 10px;
   float: left;
+}
 
-  &:after {
-    content: "";
-    position: relative;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #9e1912 transparent;
-    border-width: 15px 12px 0;
-    bottom: -10px;
-    left: 80%;
-    margin-left: -20px;
-  }
+.text-error:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #9e1912 transparent;
+  border-width: 15px 12px 0;
+  bottom: -10px;
+  left: 80%;
+  margin-left: -20px;
 }
 
 .form-group {
@@ -118,20 +118,21 @@ input {
   border-radius: 0;
   outline: none;
   background-color: white;
+}
 
-  &:-internal-autofill-selected {
-    background-color: #fff;
-  }
+input:-internal-autofill-selected {
+  background-color: #fff;
+}
 
-  &:focus {
-    outline: 5px solid #ffdf0f;
-    border: 2px solid black;
-  }
+input:focus {
+  outline: 5px solid #ffdf0f;
+  border: 2px solid black;
 }
 
 input[type="date"]:required:invalid::-webkit-datetime-edit {
   color: transparent;
 }
+
 input[type="date"]:focus::-webkit-datetime-edit {
   color: black !important;
 }
@@ -152,17 +153,19 @@ input[type="date"]:focus::-webkit-datetime-edit {
   margin-top: 1em;
   cursor: pointer;
   color: #fff;
+}
 
-  &:hover,
-  &:focus {
-    background-color: #056932;
-  }
+.nextBtn:hover, .nextBtn:focus,
+#submit:hover,
+#submit:focus {
+  background-color: #056932;
+}
 
-  &:disabled,
-  &[disabled] {
-    cursor: not-allowed;
-    background: gray;
-  }
+.nextBtn:disabled, .nextBtn[disabled],
+#submit:disabled,
+#submit[disabled] {
+  cursor: not-allowed;
+  background: gray;
 }
 
 .prevBtn {
@@ -173,8 +176,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
   cursor: pointer;
 }
 
- //Adaptive
- @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   form {
     width: 80%;
   }
@@ -186,3 +188,4 @@ input[type="date"]:focus::-webkit-datetime-edit {
     flex-direction: column;
   }
 }
+/*# sourceMappingURL=app.component.css.map */
